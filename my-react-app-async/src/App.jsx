@@ -1,17 +1,12 @@
-import React from "react";
-import { useCounterStore } from "./store";
-
+import Users from "./Users";
 function App(){
-const count = useCounterStore((state)=>state.count)
-const increase = useCounterStore((state)=>state.increase)
-const decrease = useCounterStore((state)=>state.decrease)
-  return(
+  return (
     <div>
-      <h2>Count:{count}</h2>
-      <button onClick={increase}>+ increase</button>
-      <button onClick={decrease}>- decrease</button>
+      <h1>Zustand API Example</h1>
+      <Users />
     </div>
+  )
 
-  );
 }
+
 export default App;
